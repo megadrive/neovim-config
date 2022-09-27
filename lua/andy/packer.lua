@@ -6,7 +6,22 @@
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use 'williamboman/mason.nvim'
+
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
+  -- Mason/LSP
+  use {
+    "williamboman/mason.nvim",
+    requires = {
+      "neovim/nvim-lspconfig",
+      "williamboman/mason-lspconfig.nvim",
+      "jose-elias-alvarez/null-ls.nvim",
+    }
+  }
 
   -- fuzzyfinder
   use {
@@ -16,6 +31,7 @@ return require('packer').startup(function(use)
 
   -- theme/s
   use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- statusline
   use {

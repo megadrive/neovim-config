@@ -1,9 +1,12 @@
 local Remap = require("andy.remap")
 
-local n = Remap.nnoremap
-local v = Remap.vnoremap
-local i = Remap.inoremap
-local x = Remap.xnoremap
+local nnoremap = Remap.nnoremap
+local vnoremap = Remap.vnoremap
+local inoremap = Remap.inoremap
+local xnoremap = Remap.xnoremap
 
-n("<leader>pv", "<cmd>Ex<CR>")
+nnoremap("<leader>pv", "<cmd>Ex<CR>")
+nnoremap("<leader>pf", "<cmd>Telescope find_files<CR>")
+
+xnoremap("<leader>p", "\"_dP")
 
