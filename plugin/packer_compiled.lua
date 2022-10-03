@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\asimeon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["gruvbox-baby"] = {
+    loaded = true,
+    path = "C:\\Users\\asimeon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox-baby",
+    url = "https://github.com/luisiacc/gruvbox-baby"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\asimeon\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",

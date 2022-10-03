@@ -47,6 +47,7 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
   use 'ellisonleao/gruvbox.nvim'
+  use 'luisiacc/gruvbox-baby'
 
   -- statusline
   use {

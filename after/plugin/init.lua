@@ -4,8 +4,10 @@
 -- vim.g.catppuccin_flavour = "mocha"
 -- require("catppuccin").setup {}
 -- vim.cmd[[colorscheme catppuccin]]
-vim.o.background = "dark"
-vim.cmd[[colorscheme gruvbox]]
+vim.g.gruvbox_baby_background_color = "dark"
+vim.g.gruvbox_baby_transparent_mode = false
+vim.g.gruvbox_baby_telescope_theme = true
+vim.cmd[[colorscheme gruvbox-baby]]
 
 require('Telescope').setup {}
 
