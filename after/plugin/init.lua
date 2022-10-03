@@ -11,7 +11,11 @@ vim.cmd[[colorscheme gruvbox-baby]]
 
 require('Telescope').setup {}
 
-require('lualine').setup {}
+require('lualine').setup {
+  options = {
+    theme = 'gruvbox-baby'
+  }
+}
 
 -- Highlight on yank
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
