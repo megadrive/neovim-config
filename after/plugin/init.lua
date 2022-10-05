@@ -62,3 +62,6 @@ require("mason-lspconfig").setup()
 
 -- Nvim-Tree
 require("nvim-tree").setup()
+
+-- autopairs
+require("nvim-autopairs").setup()

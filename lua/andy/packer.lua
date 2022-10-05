@@ -63,6 +63,9 @@ return require('packer').startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
+  -- autopair brackets
+  use 'windwp/nvim-autopairs'
+
   if packer_bootstrap then
     require('packer').sync()
   end
