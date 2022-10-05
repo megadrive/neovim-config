@@ -66,6 +66,27 @@ return require('packer').startup(function(use)
   -- autopair brackets
   use 'windwp/nvim-autopairs'
 
+  -- nvim-cmp
+  use {
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'hrsh7th/cmp-cmdline',
+      'hrsh7th/cmp-nvim-lsp',
+    }
+  }
+
+  -- snippets, used by nvim-cmp
+  use {
+    'dcampos/nvim-snippy',
+    'dcampos/cmp-snippy'
+  }
+
+  vim.cmd[[
+    menu
+  ]]
+
   if packer_bootstrap then
     require('packer').sync()
   end
